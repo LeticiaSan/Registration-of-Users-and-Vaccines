@@ -19,7 +19,7 @@ const theme = createTheme({
       darker: '#053e85',
     },
   white: {
-      main: '#FE6B8B',
+      main: '#0971f1',
       contrastText: 'white',
     },
   },
@@ -48,7 +48,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          oi
+    
       </header>
       <div className="Form">
         <h2>Cadastro de Vacinas</h2>
@@ -63,10 +63,11 @@ function App() {
         <Autocomplete
           theme={theme}
           disablePortal
+          color="white"
           /*className={classes.root}
           id="combo-box-demo"*/
           options={vacinas}
-          sx={{ width: 300, color:'white', height: 60}}
+          sx={{ width: 300,height: 80}}
           renderInput={(params) => <TextField {...params} label="Vacina" />}
         />
         <ThemeProvider theme={theme}>
